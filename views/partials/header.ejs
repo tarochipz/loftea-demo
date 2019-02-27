@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title> loftea</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	<!--loftea logo font -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet">
+	<!--headers and menu bar font-->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300" rel="stylesheet">
+	<!--paragraph font-->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4 logo">LOFTEA</h1> <!-- logo goes here-->
+	    <div class="row">
+	    	<div class="col">
+	    		<p>760 Queen St W</p>
+	    	</div>
+	    	<div class="col">
+	    		<p>Toronto, ON, Canada</p>
+	    	</div>
+	    	<div class="col">
+	    		<p>416.662.5773</p>
+	    	</div>
+	    </div>
+	    <div class="social">
+		    <a href="https://www.instagram.com/LOFTEAINC/" target="_blank"><i class="fa fa-lg fa-instagram socialIcons"></i></a>
+		    <a href="https://www.facebook.com/LOFTEAINC/" target="_blank"><i class="fa fa-lg fa-facebook-square socialIcons"></i></a>
+		    <a href="https://twitter.com/LOFTEAINC/" target="_blank"><i class="fa fa-lg fa-twitter-square socialIcons" ></i></a>
+	    </div>
+	  </div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-center" id="navContent">
+	    <ul class="navbar-nav">
+	     <li <% if (pageName === 'home') { %>class="dropdown active" <% } %> class="dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          HOME
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="/">FIZZANTI&#153;</a>
+	          <a class="dropdown-item" href="/#lofteaSix">THE LOFTEA&#153; SIX</a>
+	        </div>
+	      </li>
+	      <li <% if (pageName === 'about') { %>class="active" <% } %> >
+	    	<a class="nav-link" href="/about">ABOUT</a>
+	      </li>
+	       <li <% if (pageName === 'menu') { %>class="active" <% } %> >
+	    	<a class="nav-link" href="/menu">MENU</a>
+	      </li>
+	       <li <% if (pageName === 'gallery') { %>class="active" <% } %> >
+	    	<a class="nav-link" href="/gallery">GALLERY</a>
+	      </li>
+	     <!--  <li <% if (pageName === 'about') { %>class="active" <% } %> >-->
+	    	<!--<a class="nav-link" href="/#">ECO-FRIENDLY</a>-->
+	     <!-- </li>-->
+	       <li <% if (pageName === 'contact') { %>class="active" <% } %> >
+	    	<a class="nav-link" href="/contact">CONTACT</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">ECO-FRIENDLY</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+</div>
+
+
+
